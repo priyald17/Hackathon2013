@@ -24,6 +24,26 @@
     return self;
 }
 
+- (IBAction)facebookLogIn:(id)sender;
+    AppDelegate *appDelegate =
+    [[UIApplication sharedApplication] delegate];
+    
+    // If the person is authenticated, log out when the button is clicked.
+    // If the person is not authenticated, log in when the button is clicked.
+    if (FBSession.activeSession.isOpen) {
+        [appDelegate closeSession];
+    } else {
+        // The person has initiated a login, so call the openSession method
+        // and show the login UX if necessary.
+        [appDelegate openSessionWithAllowLoginUI:YES];
+    }
+    
+    
+}
+
+- (IBAction)facebookLogIn:(id)sender {
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

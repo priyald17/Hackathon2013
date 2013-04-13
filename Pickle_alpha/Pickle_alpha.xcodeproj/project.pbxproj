@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9D7D26921719763D002FA6F3 /* GroupDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D26911719763D002FA6F3 /* GroupDetailsVC.m */; };
 		9D7D2698171980E4002FA6F3 /* PickleDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D2697171980E4002FA6F3 /* PickleDetailsVC.m */; };
+		9D7D26A217198E11002FA6F3 /* PickleTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D26A117198E11002FA6F3 /* PickleTime.m */; };
 		9F65A3B0171955AD004B5221 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F65A3AF171955AD004B5221 /* Parse.framework */; };
 		9FBC8F9E171979F800599DB4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBC8F9D171979F800599DB4 /* AudioToolbox.framework */; };
 		9FBC8FA017197A0100599DB4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBC8F9F17197A0100599DB4 /* CFNetwork.framework */; };
@@ -43,6 +44,8 @@
 		9D7D26911719763D002FA6F3 /* GroupDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupDetailsVC.m; sourceTree = "<group>"; };
 		9D7D2696171980E4002FA6F3 /* PickleDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickleDetailsVC.h; sourceTree = "<group>"; };
 		9D7D2697171980E4002FA6F3 /* PickleDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickleDetailsVC.m; sourceTree = "<group>"; };
+		9D7D26A017198E11002FA6F3 /* PickleTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickleTime.h; sourceTree = "<group>"; };
+		9D7D26A117198E11002FA6F3 /* PickleTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickleTime.m; sourceTree = "<group>"; };
 		9F65A3AF171955AD004B5221 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		9FBC8F9D171979F800599DB4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		9FBC8F9F17197A0100599DB4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -149,6 +152,8 @@
 			children = (
 				D88208B6171947CE00D74162 /* AppDelegate.h */,
 				D88208B7171947CF00D74162 /* AppDelegate.m */,
+				9D7D26A017198E11002FA6F3 /* PickleTime.h */,
+				9D7D26A117198E11002FA6F3 /* PickleTime.m */,
 				9FBC8FAF17197D5F00599DB4 /* Picklee.h */,
 				9FBC8FB017197D5F00599DB4 /* Picklee.m */,
 				D88208BF171947CF00D74162 /* MainStoryboard.storyboard */,
@@ -264,6 +269,7 @@
 				9D7D26921719763D002FA6F3 /* GroupDetailsVC.m in Sources */,
 				9FBC8FB117197D5F00599DB4 /* Picklee.m in Sources */,
 				9D7D2698171980E4002FA6F3 /* PickleDetailsVC.m in Sources */,
+				9D7D26A217198E11002FA6F3 /* PickleTime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
