@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D88207D717191A3B00D74162"
+               BlueprintIdentifier = "D882082117191D6B00D74162"
                BuildableName = "Pickle.app"
                BlueprintName = "Pickle"
                ReferencedContainer = "container:Pickle.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D882080017191A3B00D74162"
+               BlueprintIdentifier = "D882084A17191D6B00D74162"
                BuildableName = "PickleTests.octest"
                BlueprintName = "PickleTests"
                ReferencedContainer = "container:Pickle.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D88207D717191A3B00D74162"
+            BlueprintIdentifier = "D882082117191D6B00D74162"
             BuildableName = "Pickle.app"
             BlueprintName = "Pickle"
             ReferencedContainer = "container:Pickle.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D88207D717191A3B00D74162"
+            BlueprintIdentifier = "D882082117191D6B00D74162"
             BuildableName = "Pickle.app"
             BlueprintName = "Pickle"
             ReferencedContainer = "container:Pickle.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D88207D717191A3B00D74162"
+            BlueprintIdentifier = "D882082117191D6B00D74162"
             BuildableName = "Pickle.app"
             BlueprintName = "Pickle"
             ReferencedContainer = "container:Pickle.xcodeproj">
