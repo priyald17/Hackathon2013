@@ -87,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="-1088" y="-22"/>
         </scene>
-        <!--View Controller - Groups-->
+        <!--GroupsVC - Groups-->
         <scene sceneID="jOb-vx-xG4">
             <objects>
-                <viewController id="VdJ-Y8-Wtw" sceneMemberID="viewController">
+                <viewController id="VdJ-Y8-Wtw" customClass="GroupsVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DqF-lL-LMu">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -136,7 +136,7 @@
             <objects>
                 <viewController id="TXd-j0-ac6" userLabel="View Controller - Pickles" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EI-6w-FGx">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pickles View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIi-YJ-SPf">
@@ -236,7 +236,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OjW-BI-j0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="2nI-BK-Pjv" customClass="NewPickleViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fK0-TU-2ps">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MIq-C3-4N9">
@@ -372,7 +372,7 @@
             <objects>
                 <viewController id="4l8-2L-mKq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MAe-1I-2xI">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Start" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8h-hG-BDn">
@@ -469,7 +469,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <objects>
                 <viewController id="R2G-fU-Owt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1ay-Rs-7ap">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Invite Peeps" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHj-XD-J3Y">
@@ -511,12 +511,43 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <point key="canvasLocation" x="-547" y="-145"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="GroupsVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GroupsVC.h"/>
+        </class>
+        <class className="LoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="usernameField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="NewGroupViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewGroupViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="groupName" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NewPickleViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewPickleViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="pickleDescription" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="whereDescription" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="PickleGroupTabBarController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PickleGroupTabBarController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="01r-gw-ajk"/>
+        <segue reference="Lch-f7-2SS"/>
     </inferredMetricsTieBreakers>
 </document>

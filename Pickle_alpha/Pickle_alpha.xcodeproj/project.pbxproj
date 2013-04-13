@@ -23,6 +23,7 @@
 		D88208CF171954F600D74162 /* NewPickleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88208CE171954F600D74162 /* NewPickleViewController.m */; };
 		D8820901171963D800D74162 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8820900171963D800D74162 /* LoginViewController.m */; };
 		D88209041719669300D74162 /* NewGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88209031719669200D74162 /* NewGroupViewController.m */; };
+		D882090717196C0400D74162 /* GroupsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D882090617196C0300D74162 /* GroupsVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,8 @@
 		D8820900171963D800D74162 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		D88209021719669200D74162 /* NewGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewGroupViewController.h; sourceTree = "<group>"; };
 		D88209031719669200D74162 /* NewGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewGroupViewController.m; sourceTree = "<group>"; };
+		D882090517196C0300D74162 /* GroupsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupsVC.h; sourceTree = "<group>"; };
+		D882090617196C0300D74162 /* GroupsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupsVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				D88208BF171947CF00D74162 /* MainStoryboard.storyboard */,
 				D88209021719669200D74162 /* NewGroupViewController.h */,
 				D88209031719669200D74162 /* NewGroupViewController.m */,
+				D882090517196C0300D74162 /* GroupsVC.h */,
+				D882090617196C0300D74162 /* GroupsVC.m */,
 				D88208FF171963D800D74162 /* LoginViewController.h */,
 				D8820900171963D800D74162 /* LoginViewController.m */,
 				D88208CD171954F600D74162 /* NewPickleViewController.h */,
@@ -204,6 +209,7 @@
 				D88208CF171954F600D74162 /* NewPickleViewController.m in Sources */,
 				D8820901171963D800D74162 /* LoginViewController.m in Sources */,
 				D88209041719669300D74162 /* NewGroupViewController.m in Sources */,
+				D882090717196C0400D74162 /* GroupsVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
