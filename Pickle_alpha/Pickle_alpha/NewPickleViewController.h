@@ -10,7 +10,10 @@
 
 @interface NewPickleViewController : UIViewController {
     UIGestureRecognizer* tapRecognizer;
+    NSMutableArray *listOfCurrentPickles;
 }
+- (IBAction)makeANewPickle:(id)sender;
+@property (weak, nonatomic) IBOutlet UITableView *currentPicklesTable;
 
 @property (weak, nonatomic) IBOutlet UITextField *pickleDescription;
 @property (weak, nonatomic) IBOutlet UITextField *whereDescription;

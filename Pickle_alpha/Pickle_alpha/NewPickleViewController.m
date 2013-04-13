@@ -38,6 +38,15 @@
     
     tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                             action:@selector(didTapAnywhere:)];
+    
+    [super viewDidLoad];
+    [[self currentPicklesTable]setDelegate:self];
+    [[self currentPicklesTable]setDataSource:self];
+    
+    listOfCurrentPickles = [[NSMutableArray alloc]init];
+    [listOfCurrentPickles addObject:@"Dinner tonight?"];
+    [listOfCurrentPickles addObject:@"Who wants to play soccer?"];
+    [listOfCurrentPickles addObject:@"Conference room meeting?"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,4 +69,32 @@
     [_whereDescription resignFirstResponder];
 }
 
+- (IBAction)makeANewPickle:(id)sender {
+}
+
+//#pragma tableview datasource and delegate methods
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    // #2
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    // #3
+    return [listOfCurrentPickles count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
+    
+    // #4
+    cell.textLabel.text = [listOfCurrentPickles objectAtIndex:indexPath.row];
+    return cell;
+}
 @end

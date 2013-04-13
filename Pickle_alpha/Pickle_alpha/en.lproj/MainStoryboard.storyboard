@@ -92,7 +92,7 @@
             <objects>
                 <viewController id="VdJ-Y8-Wtw" customClass="GroupsVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DqF-lL-LMu">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="94" width="320" height="425"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qa3-TC-IeA">
@@ -120,13 +120,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qa3-TC-IeA" firstAttribute="leading" secondItem="DqF-lL-LMu" secondAttribute="leading" constant="71" id="Kft-Ku-pGf"/>
-                            <constraint firstItem="bJ2-jd-Hpt" firstAttribute="top" secondItem="DqF-lL-LMu" secondAttribute="top" constant="67" id="P49-aM-7ko"/>
+                            <constraint firstItem="bJ2-jd-Hpt" firstAttribute="top" secondItem="DqF-lL-LMu" secondAttribute="top" constant="49" id="RIC-rK-nF4"/>
                             <constraint firstItem="bJ2-jd-Hpt" firstAttribute="leading" secondItem="DqF-lL-LMu" secondAttribute="leading" constant="28" id="WIV-Mw-3Fc"/>
                             <constraint firstItem="qa3-TC-IeA" firstAttribute="top" secondItem="DqF-lL-LMu" secondAttribute="top" constant="6" id="tDf-cO-dUI"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Groups" id="4dG-aA-Fbv"/>
-                    <navigationItem key="navigationItem" title="My Groups" id="rKH-se-biV"/>
+                    <navigationItem key="navigationItem" title="My Groups" prompt="Logout" id="rKH-se-biV" userLabel="Logout">
+                        <barButtonItem key="backBarButtonItem" title="Logout" id="XEz-Vh-8Wj"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="myPickleGroupsTable" destination="bJ2-jd-Hpt" id="nyj-gl-FFF"/>
                         <segue destination="TXd-j0-ac6" kind="modal" id="Lch-f7-2SS"/>
@@ -139,16 +141,11 @@
         <!--View Controller - Pickles-->
         <scene sceneID="u0E-x2-eZ3">
             <objects>
-                <viewController id="TXd-j0-ac6" userLabel="View Controller - Pickles" sceneMemberID="viewController">
+                <viewController id="TXd-j0-ac6" userLabel="View Controller - Pickles" customClass="NewPickleViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EI-6w-FGx">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pickles View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIi-YJ-SPf">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pN-Xz-CWr">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Make A New Pickle!">
@@ -159,20 +156,33 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="makeANewPickle:" destination="TXd-j0-ac6" eventType="touchUpInside" id="LN2-N1-FnM"/>
                                     <segue destination="2nI-BK-Pjv" kind="push" id="yuh-2U-6W3"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="q1h-U2-5Ud">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="447" id="aFS-H3-fl9"/>
+                                </constraints>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="7pN-Xz-CWr" firstAttribute="centerX" secondItem="rIi-YJ-SPf" secondAttribute="centerX" type="default" id="H9B-my-hOP"/>
-                            <constraint firstItem="rIi-YJ-SPf" firstAttribute="centerX" secondItem="5EI-6w-FGx" secondAttribute="centerX" type="default" id="P7k-hP-bvx"/>
-                            <constraint firstItem="rIi-YJ-SPf" firstAttribute="top" secondItem="5EI-6w-FGx" secondAttribute="top" constant="203" id="QLV-NO-LGZ"/>
+                            <constraint firstItem="q1h-U2-5Ud" firstAttribute="top" secondItem="7pN-Xz-CWr" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="0pH-c7-sah"/>
                             <constraint firstItem="7pN-Xz-CWr" firstAttribute="top" secondItem="5EI-6w-FGx" secondAttribute="top" constant="13" id="UUu-nd-ADV"/>
+                            <constraint firstItem="q1h-U2-5Ud" firstAttribute="leading" secondItem="5EI-6w-FGx" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ddI-Yh-vfV"/>
+                            <constraint firstItem="q1h-U2-5Ud" firstAttribute="centerX" secondItem="7pN-Xz-CWr" secondAttribute="centerX" type="default" id="nrc-CV-Dav"/>
+                            <constraint firstAttribute="trailing" secondItem="q1h-U2-5Ud" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="uBU-lp-kJ2"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pickles" id="kXX-KC-hNI" userLabel="Tab Bar Item - Pickles"/>
-                    <navigationItem key="navigationItem" id="OOI-hu-dPL"/>
+                    <navigationItem key="navigationItem" title="Pickles" prompt="Logout" id="OOI-hu-dPL" userLabel="Logout">
+                        <barButtonItem key="backBarButtonItem" title="Logout" id="Xp8-7y-WpM" userLabel="Logout"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="currentPicklesTable" destination="q1h-U2-5Ud" id="hH4-gD-KIY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tYw-79-ZAm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
