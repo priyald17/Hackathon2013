@@ -17,8 +17,9 @@
 		D88208BC171947CF00D74162 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D88208BB171947CF00D74162 /* Default@2x.png */; };
 		D88208BE171947CF00D74162 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D88208BD171947CF00D74162 /* Default-568h@2x.png */; };
 		D88208C1171947CF00D74162 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88208BF171947CF00D74162 /* MainStoryboard.storyboard */; };
-		D88208C4171947CF00D74162 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88208C3171947CF00D74162 /* ViewController.m */; };
+		D88208C4171947CF00D74162 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88208C3171947CF00D74162 /* RootViewController.m */; };
 		D88208CC17194AA100D74162 /* PickleGroupTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88208CB17194AA000D74162 /* PickleGroupTabBarController.m */; };
+		D88208CF171954F600D74162 /* NewPickleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88208CE171954F600D74162 /* NewPickleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,10 +37,12 @@
 		D88208BB171947CF00D74162 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D88208BD171947CF00D74162 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D88208C0171947CF00D74162 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		D88208C2171947CF00D74162 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D88208C3171947CF00D74162 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D88208C2171947CF00D74162 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		D88208C3171947CF00D74162 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		D88208CA17194AA000D74162 /* PickleGroupTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickleGroupTabBarController.h; sourceTree = "<group>"; };
 		D88208CB17194AA000D74162 /* PickleGroupTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickleGroupTabBarController.m; sourceTree = "<group>"; };
+		D88208CD171954F600D74162 /* NewPickleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPickleViewController.h; sourceTree = "<group>"; };
+		D88208CE171954F600D74162 /* NewPickleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPickleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +92,12 @@
 				D88208B6171947CE00D74162 /* AppDelegate.h */,
 				D88208B7171947CF00D74162 /* AppDelegate.m */,
 				D88208BF171947CF00D74162 /* MainStoryboard.storyboard */,
+				D88208CD171954F600D74162 /* NewPickleViewController.h */,
+				D88208CE171954F600D74162 /* NewPickleViewController.m */,
 				D88208CA17194AA000D74162 /* PickleGroupTabBarController.h */,
 				D88208CB17194AA000D74162 /* PickleGroupTabBarController.m */,
-				D88208C2171947CF00D74162 /* ViewController.h */,
-				D88208C3171947CF00D74162 /* ViewController.m */,
+				D88208C2171947CF00D74162 /* RootViewController.h */,
+				D88208C3171947CF00D74162 /* RootViewController.m */,
 				D88208AE171947CE00D74162 /* Supporting Files */,
 			);
 			path = Pickle_alpha;
@@ -180,8 +185,9 @@
 			files = (
 				D88208B4171947CE00D74162 /* main.m in Sources */,
 				D88208B8171947CF00D74162 /* AppDelegate.m in Sources */,
-				D88208C4171947CF00D74162 /* ViewController.m in Sources */,
+				D88208C4171947CF00D74162 /* RootViewController.m in Sources */,
 				D88208CC17194AA100D74162 /* PickleGroupTabBarController.m in Sources */,
+				D88208CF171954F600D74162 /* NewPickleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
