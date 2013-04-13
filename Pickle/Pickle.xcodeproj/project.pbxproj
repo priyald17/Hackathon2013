@@ -19,6 +19,7 @@
 		D882088917192E6900D74162 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D882088717192E6900D74162 /* MainStoryboard.storyboard */; };
 		D882088C17192E6900D74162 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D882088B17192E6900D74162 /* ViewController.m */; };
 		D88208971719306400D74162 /* Scene2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88208961719306400D74162 /* Scene2ViewController.m */; };
+		D882089A1719391A00D74162 /* TableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D88208991719391A00D74162 /* TableVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		D882088B17192E6900D74162 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D88208951719306400D74162 /* Scene2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene2ViewController.h; sourceTree = "<group>"; };
 		D88208961719306400D74162 /* Scene2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene2ViewController.m; sourceTree = "<group>"; };
+		D88208981719391A00D74162 /* TableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableVC.h; sourceTree = "<group>"; };
+		D88208991719391A00D74162 /* TableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				D882088B17192E6900D74162 /* ViewController.m */,
 				D88208951719306400D74162 /* Scene2ViewController.h */,
 				D88208961719306400D74162 /* Scene2ViewController.m */,
+				D88208981719391A00D74162 /* TableVC.h */,
+				D88208991719391A00D74162 /* TableVC.m */,
 				D882087617192E6900D74162 /* Supporting Files */,
 			);
 			path = Pickle;
@@ -182,6 +187,7 @@
 				D882088017192E6900D74162 /* AppDelegate.m in Sources */,
 				D882088C17192E6900D74162 /* ViewController.m in Sources */,
 				D88208971719306400D74162 /* Scene2ViewController.m in Sources */,
+				D882089A1719391A00D74162 /* TableVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

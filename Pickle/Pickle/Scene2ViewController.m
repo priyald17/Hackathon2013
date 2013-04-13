@@ -28,6 +28,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    UIButton *btnTwo = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    btnTwo.frame = CGRectMake(40, 140, 240, 30);
+    [btnTwo setTitle:@"vc2:v1" forState:UIControlStateNormal];
+    //[btnTwo addTarget:self action:@selector(goToOne) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btnTwo];
+    
     NSLog(@"scene 2 view");
 }
 

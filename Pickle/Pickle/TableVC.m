@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 com.zsweedyk. All rights reserved.
 //
 
-#import "TableViewController.h"
+#import "TableVC.h"
 
-@interface TableViewController ()
+@interface TableVC ()
 
 @end
 
-@implementation TableViewController
+@implementation TableVC
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    NSLog(@"table view");
 }
 
 - (void)didReceiveMemoryWarning

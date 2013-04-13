@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface Scene2ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *Scene1Button;
 
 @end
