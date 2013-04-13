@@ -18,6 +18,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSLog(@"scene 1 view");
 }
 
 - (void)didReceiveMemoryWarning
