@@ -26,7 +26,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    [super viewDidLoad];
+    [[self myPickleGroupsTable]setDelegate:self];
+    [[self myPickleGroupsTable]setDataSource:self];
+    
+    myGroupNames = [[NSMutableArray alloc]init];
+    [myGroupNames addObject:@"Soccer Friends"];
+    [myGroupNames addObject:@"SpoGro"];
+    [myGroupNames addObject:@"SVP Beta"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,4 +42,32 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)addNewGroupButton:(id)sender {
+}
+
+//#pragma tableview datasource and delegate methods
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    // #2
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    // #3
+    return [myGroupNames count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
+    
+    // #4
+    cell.textLabel.text = [myGroupNames objectAtIndex:indexPath.row];
+    return cell;
+}
 @end

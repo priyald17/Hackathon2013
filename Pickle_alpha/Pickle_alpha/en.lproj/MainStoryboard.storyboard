@@ -87,7 +87,7 @@
             </objects>
             <point key="canvasLocation" x="-1088" y="-22"/>
         </scene>
-        <!--GroupsVC - Groups-->
+        <!--GroupsVC - My Groups-->
         <scene sceneID="jOb-vx-xG4">
             <objects>
                 <viewController id="VdJ-Y8-Wtw" customClass="GroupsVC" sceneMemberID="viewController">
@@ -95,11 +95,6 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Groups View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4B-oZ-Liu">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qa3-TC-IeA">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Make a New Group!">
@@ -110,20 +105,30 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="addNewGroupButton:" destination="VdJ-Y8-Wtw" eventType="touchUpInside" id="oAb-fB-7h0"/>
                                     <segue destination="4QZ-er-Gk2" kind="push" id="QPs-Xm-IMf"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="bJ2-jd-Hpt">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="9Vq-gq-i5J"/>
+                                    <constraint firstAttribute="height" constant="347" id="Gfp-h4-tip"/>
+                                </constraints>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="T4B-oZ-Liu" firstAttribute="centerX" secondItem="DqF-lL-LMu" secondAttribute="centerX" type="default" id="O6n-6y-nAg"/>
-                            <constraint firstItem="qa3-TC-IeA" firstAttribute="leading" secondItem="DqF-lL-LMu" secondAttribute="leading" constant="72" id="PZ3-Lx-eAz"/>
-                            <constraint firstItem="T4B-oZ-Liu" firstAttribute="centerY" secondItem="DqF-lL-LMu" secondAttribute="centerY" type="default" id="i2G-Vx-Ivj"/>
-                            <constraint firstItem="qa3-TC-IeA" firstAttribute="top" secondItem="DqF-lL-LMu" secondAttribute="top" constant="20" symbolic="YES" type="default" id="sjf-6n-FeS"/>
+                            <constraint firstItem="qa3-TC-IeA" firstAttribute="leading" secondItem="DqF-lL-LMu" secondAttribute="leading" constant="71" id="Kft-Ku-pGf"/>
+                            <constraint firstItem="bJ2-jd-Hpt" firstAttribute="top" secondItem="DqF-lL-LMu" secondAttribute="top" constant="67" id="P49-aM-7ko"/>
+                            <constraint firstItem="bJ2-jd-Hpt" firstAttribute="leading" secondItem="DqF-lL-LMu" secondAttribute="leading" constant="28" id="WIV-Mw-3Fc"/>
+                            <constraint firstItem="qa3-TC-IeA" firstAttribute="top" secondItem="DqF-lL-LMu" secondAttribute="top" constant="6" id="tDf-cO-dUI"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Groups" id="4dG-aA-Fbv"/>
+                    <navigationItem key="navigationItem" title="My Groups" id="rKH-se-biV"/>
                     <connections>
+                        <outlet property="myPickleGroupsTable" destination="bJ2-jd-Hpt" id="nyj-gl-FFF"/>
                         <segue destination="TXd-j0-ac6" kind="modal" id="Lch-f7-2SS"/>
                     </connections>
                 </viewController>
@@ -233,7 +238,6 @@
         <!--New Pickle View Controller - New Pickle-->
         <scene sceneID="MLx-co-3W5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OjW-BI-j0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="2nI-BK-Pjv" customClass="NewPickleViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fK0-TU-2ps">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
@@ -364,6 +368,7 @@
                         <outlet property="whereDescription" destination="Rhz-ug-ges" id="yWw-US-mby"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OjW-BI-j0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="643" y="-752"/>
         </scene>
@@ -394,7 +399,7 @@
                                     <!--2013-04-13 09:55:04 +0000-->
                                 </date>
                                 <timeZone key="timeZone" name="America/Los_Angeles">
-                                    <mutableData key="data">
+                                    <data key="data">
 VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
 y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
 5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
@@ -412,7 +417,7 @@ f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
-</mutableData>
+</data>
                                 </timeZone>
                             </datePicker>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0db-wA-ZsW">
@@ -424,7 +429,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <!--2013-04-13 09:56:03 +0000-->
                                 </date>
                                 <timeZone key="timeZone" name="America/Los_Angeles">
-                                    <mutableData key="data">
+                                    <data key="data">
 VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
 y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
 5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
@@ -442,7 +447,7 @@ f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
-</mutableData>
+</data>
                                 </timeZone>
                             </datePicker>
                         </subviews>
@@ -511,37 +516,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <point key="canvasLocation" x="-547" y="-145"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="GroupsVC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GroupsVC.h"/>
-        </class>
-        <class className="LoginViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="usernameField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="NewGroupViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewGroupViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="groupName" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="NewPickleViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewPickleViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="pickleDescription" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="whereDescription" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="PickleGroupTabBarController" superclassName="UITabBarController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PickleGroupTabBarController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
