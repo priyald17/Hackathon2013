@@ -35,9 +35,9 @@
 
 // the following methods are able to be called by a user to edit groups, pickles, etc.
 
--(BOOL)createGroup:(NSString*)groupName;
+-(void)createGroup:(NSString*)groupName;
 
--(BOOL)createPickleWithQuestion:(NSString*)message andBeginTime:(NSDate*)startTime andEndTime:(NSDate*)endTime;
+-(void)createPickleWithQuestion:(NSString*)message andBeginTime:(NSDate*)startTime andEndTime:(NSDate*)endTime;
 
 -(BOOL)addSuggestedPlace:(NSString*)place forPickle:(NSString*)pickleID;
 

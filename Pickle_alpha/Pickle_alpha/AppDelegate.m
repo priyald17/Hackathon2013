@@ -95,14 +95,50 @@
     }
 }
 
--(NSMutableArray*) getGroupsForUser;
+-(NSMutableArray*) getGroupsForUser {
+    NSMutableArray* groups = [[NSMutableArray alloc]init];
+    PFRelation* myGroups = [currentUser relationforKey:@"groups"];
+    [[myGroups query] findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (error) {
+        }
+        else {
+            [groups addObjectsFromArray:objects];
+        }
+    }];
+    return groups;
+}
 
--(NSMutableArray*) getPickleesForGroupName:(NSString*)name;
+-(NSMutableArray*) getPickleesForGroupName:(NSString*)name {
+    
+}
 
--(NSMutableString*) getUsernameForCurrentUser;
+//-(NSMutableString*) getUsernameForCurrentUser;
 
--(NSMutableArray*) getFriendsNamesForCurrentUser;
+//-(NSMutableArray*) getFriendsNamesForCurrentUser;
 
--(NSMutableArray*) getFriendsIDForFriend:(NSString*)friendName;
+//-(NSMutableArray*) getFriendsIDForFriend:(NSString*)friendName;
+
+-(void)createGroup:(NSString*)groupName {
+    PFObject* group = [PFObject objectWithClassName:@"Group"];
+    PFRelation* groupMembers = [group relationforKey:@"members"];
+    [groupMembers addObject:currentUser];
+    [group saveInBackground];
+    PFRelation* userGroups = [currentUser relationforKey:@"groups"];
+    [userGroups addObject:group];
+    [currentUser saveInBackground];
+}
+
+-(void)createPickleWithQuestion:(NSString*)message andBeginTime:(NSDate*)startTime andEndTime:(NSDate*)endTime {
+    PFObject* pickle = [PFObject objectWithClassName:@"Pickle"];
+    [pickle addObject:currentUser forKey:@"pickler"];
+    [pickle addObject:message forKey:@"message"];
+    [pickle addObject:startTime forKey:@"startTime"];
+    [pickle addObject:endTime forKey:@"endTime"];
+    [pickle saveInBackground];
+    PFRelation *myPickles = [currentUser relationforKey:@"myPickles"];
+    [myPickles addObject:pickle];
+    [currentUser saveInBackground];
+    
+}
 
 @end
