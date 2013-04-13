@@ -493,6 +493,20 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             </objects>
             <point key="canvasLocation" x="1173" y="-392"/>
         </scene>
+        <!--Pickle DetailsVC-->
+        <scene sceneID="LQm-aC-KIB">
+            <objects>
+                <viewController id="zvX-vp-OIM" customClass="PickleDetailsVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="brW-SM-dcx">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b1h-9z-cyh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="659" y="-1485"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="bnp-H1-mSn">
             <objects>
@@ -575,6 +589,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <relationship kind="outlet" name="pickleDescription" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="whereDescription" candidateClass="UITextField"/>
             </relationships>
+        </class>
+        <class className="PickleDetailsVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PickleDetailsVC.h"/>
         </class>
         <class className="PickleGroupTabBarController" superclassName="UITabBarController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PickleGroupTabBarController.h"/>
