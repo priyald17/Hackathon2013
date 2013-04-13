@@ -90,8 +90,8 @@
             [pickleMessagesIDs addObjectsFromArray:objects];
         }
     }];
-    for (NSString* pickleMessage in pickleMessagesIDs) {
-        return pickleMessage;
+    for (PFObject* pickleMessage in pickleMessagesIDs) {
+        return pickleMessage.objectId;
     }
 }
 
@@ -138,7 +138,15 @@
     PFRelation *myPickles = [currentUser relationforKey:@"myPickles"];
     [myPickles addObject:pickle];
     [currentUser saveInBackground];
-    
 }
+
+-(void)addSuggestedPlace:(NSString*)place forPickle:(NSString*)pickleID {
+    PFQuery *query = [PFQuery queryWithClassName:@"Pickle"];
+    PFObject *pickle = [query getObjectWithId:pickleID];
+    PFRelation *picklePlaces = [pickle relationforKey:@"suggestedPlaces"];
+    // if errors occur, make place an object. For right now, leaving as an NSString.
+    [picklePlaces addObject:place];
+}
+
 
 @end

@@ -39,11 +39,11 @@
 
 -(void)createPickleWithQuestion:(NSString*)message andBeginTime:(NSDate*)startTime andEndTime:(NSDate*)endTime;
 
--(BOOL)addSuggestedPlace:(NSString*)place forPickle:(NSString*)pickleID;
+-(void)addSuggestedPlace:(NSString*)place forPickle:(NSString*)pickleID;
 
--(BOOL)addSuggestedTime:(NSDate*)date forPickle:(NSString*)pickleID;
+-(void)addSuggestedTime:(NSDate*)date forPickle:(NSString*)pickleID;
 
--(BOOL)addFriend:(NSString*)friendName forPickle:(NSString*)pickleID;
+-(void)addFriend:(NSString*)friendName forPickle:(NSString*)pickleID;
 
 // the following methods get data from a pickle. Note that each must be passed a pickle id.
 
