@@ -30,7 +30,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GSd-GG-1yM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="rhX-h3-9qY">
                     <connections>
-                        <segue destination="DIg-3r-fpQ" kind="push" id="o8i-ib-yVE"/>
+                        <segue destination="DIg-3r-fpQ" kind="modal" id="o8i-ib-yVE"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -54,7 +54,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Nc-HV-dSb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="v85-r7-YY8">
                     <connections>
-                        <segue destination="hyk-FU-z7E" kind="push" id="Ldo-NQ-5RD"/>
+                        <segue destination="hyk-FU-z7E" kind="modal" id="Ldo-NQ-5RD"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -78,7 +78,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfd-Lu-bzF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="37D-Qi-Ysb">
                     <connections>
-                        <segue destination="MQt-Ck-VhN" kind="push" id="PLm-t6-1hf"/>
+                        <segue destination="MQt-Ck-VhN" kind="modal" id="PLm-t6-1hf"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -117,7 +117,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMT-IM-FZ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="mpj-Gz-Ilv">
                     <connections>
-                        <segue destination="j25-om-PFm" kind="push" id="ayX-pu-4gQ"/>
+                        <segue destination="j25-om-PFm" kind="modal" id="ayX-pu-4gQ"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
