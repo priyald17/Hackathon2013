@@ -8,6 +8,8 @@
 
 #import "GroupsVC.h"
 
+#import "GroupDetailsVC.h"
+
 @interface GroupsVC ()
 
 @end
@@ -68,6 +70,18 @@
     
     // #4
     cell.textLabel.text = [myGroupNames objectAtIndex:indexPath.row];
+    
+    
+    
     return cell;
 }
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    GroupDetailsVC *groupController = [[GroupDetailsVC alloc] initWithGroupName:[tableView cellForRowAtIndexPath:indexPath].textLabel.text];
+    [[self navigationController] pushViewController:groupController animated:YES];
+}
+
 @end
