@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GroupsVC : UIViewController
+@interface GroupsVC : UIViewController{
+    NSMutableArray *myGroupNames;
+}
+- (IBAction)addNewGroupButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UITableView *myPickleGroupsTable;
 
 @end
