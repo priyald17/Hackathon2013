@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GroupDetailsVC : UIViewController
+@interface GroupDetailsVC : UIViewController {
+    
+    NSString* _groupName;
+}
+
+-(id)initWithGroupName:(NSString*) groupName;
 
 @end
