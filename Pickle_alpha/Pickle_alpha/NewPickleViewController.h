@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewPickleViewController : UIViewController
+@interface NewPickleViewController : UIViewController {
+    UIGestureRecognizer* tapRecognizer;
+}
+
+@property (weak, nonatomic) IBOutlet UITextField *pickleDescription;
+@property (weak, nonatomic) IBOutlet UITextField *whereDescription;
 
 @end

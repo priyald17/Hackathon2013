@@ -1,24 +1,25 @@
 //
-//  NewPickleViewController.m
+//  LoginViewController.m
 //  Pickle_alpha
 //
 //  Created by jarthur on 4/13/13.
 //  Copyright (c) 2013 com.hack2013. All rights reserved.
 //
 
-#import "NewPickleViewController.h"
+#import "LoginViewController.h"
 
-@interface NewPickleViewController ()
+@interface LoginViewController ()
 
 @end
 
-@implementation NewPickleViewController
+@implementation LoginViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        [self.view endEditing:YES];
     }
     return self;
 }
@@ -56,8 +57,8 @@
 }
 
 -(void)didTapAnywhere: (UITapGestureRecognizer*) recognizer {
-    [_pickleDescription resignFirstResponder];
-    [_whereDescription resignFirstResponder];
+    [_usernameField resignFirstResponder];
+    [_passwordField resignFirstResponder];
 }
 
 @end

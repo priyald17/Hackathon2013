@@ -1,18 +1,18 @@
 //
-//  NewPickleViewController.m
+//  NewGroupViewController.m
 //  Pickle_alpha
 //
 //  Created by jarthur on 4/13/13.
 //  Copyright (c) 2013 com.hack2013. All rights reserved.
 //
 
-#import "NewPickleViewController.h"
+#import "NewGroupViewController.h"
 
-@interface NewPickleViewController ()
+@interface NewGroupViewController ()
 
 @end
 
-@implementation NewPickleViewController
+@implementation NewGroupViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -56,8 +56,8 @@
 }
 
 -(void)didTapAnywhere: (UITapGestureRecognizer*) recognizer {
-    [_pickleDescription resignFirstResponder];
-    [_whereDescription resignFirstResponder];
+    [_groupName resignFirstResponder];
 }
+
 
 @end
