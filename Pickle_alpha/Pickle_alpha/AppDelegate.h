@@ -10,6 +10,7 @@
 #import <Parse/Parse.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    PFUser* currentUser;
 }
 
 @property (strong, nonatomic) UIWindow *window;

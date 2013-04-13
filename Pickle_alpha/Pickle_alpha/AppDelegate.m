@@ -46,25 +46,63 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-/*
-+(void)callOnLogin {
+
+-(void)callOnLogin {
     currentUser = [PFUser currentUser];
 }
 
-+(NSMutableArray*) getPickleMessages {
+-(NSMutableArray*) getPickleMessages {
+    NSMutableArray* pickleMessages= [[NSMutableArray alloc]init];
+    NSMutableArray* pickleMessagesIDs = [[NSMutableArray alloc]init];
+    PFRelation *myPickles = [currentUser relationforKey:@"myPickles"];
+    [[myPickles query] findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (error) {
+        }
+        else {
+            [pickleMessagesIDs addObjectsFromArray:objects];
+        }
+    }];
+    PFRelation *otherPickles = [currentUser relationforKey:@"otherPickles"];
+    [[otherPickles query] findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (error) {
+            return;
+        }
+        else {
+            [pickleMessagesIDs addObjectsFromArray:objects];
+        }
+    }];
+    for (PFObject* pickle in pickleMessagesIDs) {
+        [pickleMessages addObject:[pickle objectForKey:@"message"]];
+    }
+    return pickleMessages;
     
 }
 
-+(NSString*) getPickleIDForMessage:(NSString*)message;
+-(NSString*) getPickleIDForMessage:(NSString*)message {
+    NSMutableArray* pickleMessagesIDs = [[NSMutableArray alloc]init];
+    PFRelation *myPickles = [currentUser relationforKey:@"myPickles"];
+    PFQuery* query = [myPickles query];
+    [query whereKey:@"message" equalTo:message];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (error) {
+        }
+        else {
+            [pickleMessagesIDs addObjectsFromArray:objects];
+        }
+    }];
+    for (NSString* pickleMessage in pickleMessagesIDs) {
+        return pickleMessage;
+    }
+}
 
-+(NSMutableArray*) getGroupsForUser;
+-(NSMutableArray*) getGroupsForUser;
 
-+(NSMutableArray*) getPickleesForGroupName:(NSString*)name;
+-(NSMutableArray*) getPickleesForGroupName:(NSString*)name;
 
-+(NSMutableString*) getUsernameForCurrentUser;
+-(NSMutableString*) getUsernameForCurrentUser;
 
-+(NSMutableArray*) getFriendsNamesForCurrentUser;
+-(NSMutableArray*) getFriendsNamesForCurrentUser;
 
-+(NSMutableArray*) getFriendsIDForFriend:(NSString*)friendName;
-*/
+-(NSMutableArray*) getFriendsIDForFriend:(NSString*)friendName;
+
 @end
