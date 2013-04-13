@@ -94,6 +94,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="64j-E8-Ftb"/>
                     <connections>
+                        <outlet property="facebookButton" destination="SJg-FC-wPT" id="wFm-zs-sxJ"/>
                         <outlet property="passwordField" destination="eHz-ZZ-f4G" id="w3Q-Pn-ewj"/>
                         <outlet property="usernameField" destination="oGu-Cs-eo1" id="n4j-KX-ApS"/>
                     </connections>
@@ -569,6 +570,52 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <point key="canvasLocation" x="-547" y="-145"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="GroupDetailsVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GroupDetailsVC.h"/>
+        </class>
+        <class className="GroupsVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GroupsVC.h"/>
+            <relationships>
+                <relationship kind="action" name="addNewGroupButton:"/>
+                <relationship kind="outlet" name="myPickleGroupsTable" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="LoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="authButtonAction:"/>
+                <relationship kind="action" name="facebookLogIn:"/>
+                <relationship kind="outlet" name="facebookButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="usernameField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="NewGroupViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewGroupViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="groupName" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NewPickleViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewPickleViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="makeANewPickle:"/>
+                <relationship kind="outlet" name="currentPicklesTable" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="pickleDescription" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="whereDescription" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="PickleDetailsVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PickleDetailsVC.h"/>
+        </class>
+        <class className="PickleGroupTabBarController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PickleGroupTabBarController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
