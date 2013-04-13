@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F65A3B0171955AD004B5221 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F65A3AF171955AD004B5221 /* Parse.framework */; };
 		D88208A8171947CE00D74162 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88208A7171947CE00D74162 /* UIKit.framework */; };
 		D88208AA171947CE00D74162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88208A9171947CE00D74162 /* Foundation.framework */; };
 		D88208AC171947CE00D74162 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88208AB171947CE00D74162 /* CoreGraphics.framework */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F65A3AF171955AD004B5221 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		D88208A4171947CE00D74162 /* Pickle_alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pickle_alpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88208A7171947CE00D74162 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D88208A9171947CE00D74162 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +55,7 @@
 				D88208A8171947CE00D74162 /* UIKit.framework in Frameworks */,
 				D88208AA171947CE00D74162 /* Foundation.framework in Frameworks */,
 				D88208AC171947CE00D74162 /* CoreGraphics.framework in Frameworks */,
+				9F65A3B0171955AD004B5221 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 		D88208A6171947CE00D74162 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F65A3AF171955AD004B5221 /* Parse.framework */,
 				D88208A7171947CE00D74162 /* UIKit.framework */,
 				D88208A9171947CE00D74162 /* Foundation.framework */,
 				D88208AB171947CE00D74162 /* CoreGraphics.framework */,
@@ -272,6 +276,10 @@
 		D88208C8171947CF00D74162 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pickle_alpha/Pickle_alpha-Prefix.pch";
 				INFOPLIST_FILE = "Pickle_alpha/Pickle_alpha-Info.plist";
@@ -283,6 +291,10 @@
 		D88208C9171947CF00D74162 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pickle_alpha/Pickle_alpha-Prefix.pch";
 				INFOPLIST_FILE = "Pickle_alpha/Pickle_alpha-Info.plist";
@@ -310,6 +322,7 @@
 				D88208C9171947CF00D74162 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
