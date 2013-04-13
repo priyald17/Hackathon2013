@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    NSLog(@"pickle group tab bar loaded");
 }
 
 - (void)didReceiveMemoryWarning
