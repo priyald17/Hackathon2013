@@ -18,6 +18,7 @@
 		9FBC8FAA17197A2A00599DB4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBC8FA917197A2A00599DB4 /* Security.framework */; };
 		9FBC8FAC17197A3200599DB4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBC8FAB17197A3200599DB4 /* StoreKit.framework */; };
 		9FBC8FAE17197A3800599DB4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBC8FAD17197A3800599DB4 /* SystemConfiguration.framework */; };
+		9FBC8FB117197D5F00599DB4 /* Picklee.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBC8FB017197D5F00599DB4 /* Picklee.m */; };
 		D88208A8171947CE00D74162 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88208A7171947CE00D74162 /* UIKit.framework */; };
 		D88208AA171947CE00D74162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88208A9171947CE00D74162 /* Foundation.framework */; };
 		D88208AC171947CE00D74162 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88208AB171947CE00D74162 /* CoreGraphics.framework */; };
@@ -49,6 +50,8 @@
 		9FBC8FA917197A2A00599DB4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		9FBC8FAB17197A3200599DB4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9FBC8FAD17197A3800599DB4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9FBC8FAF17197D5F00599DB4 /* Picklee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Picklee.h; sourceTree = "<group>"; };
+		9FBC8FB017197D5F00599DB4 /* Picklee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Picklee.m; sourceTree = "<group>"; };
 		D88208A4171947CE00D74162 /* Pickle_alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pickle_alpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88208A7171947CE00D74162 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D88208A9171947CE00D74162 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -143,6 +146,8 @@
 			children = (
 				D88208B6171947CE00D74162 /* AppDelegate.h */,
 				D88208B7171947CF00D74162 /* AppDelegate.m */,
+				9FBC8FAF17197D5F00599DB4 /* Picklee.h */,
+				9FBC8FB017197D5F00599DB4 /* Picklee.m */,
 				D88208BF171947CF00D74162 /* MainStoryboard.storyboard */,
 				D88209021719669200D74162 /* NewGroupViewController.h */,
 				D88209031719669200D74162 /* NewGroupViewController.m */,
@@ -252,6 +257,7 @@
 				D88209041719669300D74162 /* NewGroupViewController.m in Sources */,
 				D882090717196C0400D74162 /* GroupsVC.m in Sources */,
 				9D7D26921719763D002FA6F3 /* GroupDetailsVC.m in Sources */,
+				9FBC8FB117197D5F00599DB4 /* Picklee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

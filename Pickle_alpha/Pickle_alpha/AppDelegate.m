@@ -46,5 +46,25 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+/*
++(void)callOnLogin {
+    currentUser = [PFUser currentUser];
+}
 
++(NSMutableArray*) getPickleMessages {
+    
+}
+
++(NSString*) getPickleIDForMessage:(NSString*)message;
+
++(NSMutableArray*) getGroupsForUser;
+
++(NSMutableArray*) getPickleesForGroupName:(NSString*)name;
+
++(NSMutableString*) getUsernameForCurrentUser;
+
++(NSMutableArray*) getFriendsNamesForCurrentUser;
+
++(NSMutableArray*) getFriendsIDForFriend:(NSString*)friendName;
+*/
 @end
