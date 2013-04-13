@@ -67,7 +67,7 @@
             </objects>
             <point key="canvasLocation" x="-1088" y="-22"/>
         </scene>
-        <!--View Controller - Item 2-->
+        <!--View Controller - Groups-->
         <scene sceneID="jOb-vx-xG4">
             <objects>
                 <viewController id="VdJ-Y8-Wtw" sceneMemberID="viewController">
@@ -87,7 +87,7 @@
                             <constraint firstItem="T4B-oZ-Liu" firstAttribute="centerY" secondItem="DqF-lL-LMu" secondAttribute="centerY" type="default" id="i2G-Vx-Ivj"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="4dG-aA-Fbv"/>
+                    <tabBarItem key="tabBarItem" title="Groups" id="4dG-aA-Fbv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rjS-NI-8AA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,7 +113,7 @@
                             <constraint firstItem="rIi-YJ-SPf" firstAttribute="top" secondItem="5EI-6w-FGx" secondAttribute="top" constant="203" id="QLV-NO-LGZ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="kXX-KC-hNI" userLabel="Tab Bar Item - Pickles"/>
+                    <tabBarItem key="tabBarItem" title="Pickles" id="kXX-KC-hNI" userLabel="Tab Bar Item - Pickles"/>
                     <navigationItem key="navigationItem" id="OOI-hu-dPL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tYw-79-ZAm" userLabel="First Responder" sceneMemberID="firstResponder"/>
