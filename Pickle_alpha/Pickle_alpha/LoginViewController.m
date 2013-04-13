@@ -23,7 +23,7 @@
     }
     return self;
 }
-
+/*
 - (IBAction)facebookLogIn:(id)sender;
     AppDelegate *appDelegate =
     [[UIApplication sharedApplication] delegate];
@@ -80,5 +80,5 @@
     [_usernameField resignFirstResponder];
     [_passwordField resignFirstResponder];
 }
-
+*/
 @end
