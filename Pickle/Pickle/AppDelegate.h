@@ -6,9 +6,6 @@
 //  Copyright (c) 2013 com.zsweedyk. All rights reserved.
 //
 
-
-// Priya's comment!
-
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>

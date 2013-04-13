@@ -7,158 +7,102 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D882082617191D6B00D74162 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D882082517191D6B00D74162 /* UIKit.framework */; };
-		D882082817191D6B00D74162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D882082717191D6B00D74162 /* Foundation.framework */; };
-		D882082A17191D6B00D74162 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D882082917191D6B00D74162 /* CoreGraphics.framework */; };
-		D882083017191D6B00D74162 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D882082E17191D6B00D74162 /* InfoPlist.strings */; };
-		D882083217191D6B00D74162 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D882083117191D6B00D74162 /* main.m */; };
-		D882083617191D6B00D74162 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D882083517191D6B00D74162 /* AppDelegate.m */; };
-		D882083817191D6B00D74162 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D882083717191D6B00D74162 /* Default.png */; };
-		D882083A17191D6B00D74162 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D882083917191D6B00D74162 /* Default@2x.png */; };
-		D882083C17191D6B00D74162 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D882083B17191D6B00D74162 /* Default-568h@2x.png */; };
-		D882083F17191D6B00D74162 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D882083D17191D6B00D74162 /* MainStoryboard_iPhone.storyboard */; };
-		D882084217191D6B00D74162 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D882084017191D6B00D74162 /* MainStoryboard_iPad.storyboard */; };
-		D882084517191D6B00D74162 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D882084417191D6B00D74162 /* ViewController.m */; };
-		D882084D17191D6B00D74162 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D882084C17191D6B00D74162 /* SenTestingKit.framework */; };
-		D882084E17191D6B00D74162 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D882082517191D6B00D74162 /* UIKit.framework */; };
-		D882084F17191D6B00D74162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D882082717191D6B00D74162 /* Foundation.framework */; };
-		D882085717191D6B00D74162 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D882085517191D6B00D74162 /* InfoPlist.strings */; };
-		D882085A17191D6B00D74162 /* PickleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D882085917191D6B00D74162 /* PickleTests.m */; };
+		D882087017192E6900D74162 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D882086F17192E6900D74162 /* UIKit.framework */; };
+		D882087217192E6900D74162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D882087117192E6900D74162 /* Foundation.framework */; };
+		D882087417192E6900D74162 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D882087317192E6900D74162 /* CoreGraphics.framework */; };
+		D882087A17192E6900D74162 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D882087817192E6900D74162 /* InfoPlist.strings */; };
+		D882087C17192E6900D74162 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D882087B17192E6900D74162 /* main.m */; };
+		D882088017192E6900D74162 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D882087F17192E6900D74162 /* AppDelegate.m */; };
+		D882088217192E6900D74162 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D882088117192E6900D74162 /* Default.png */; };
+		D882088417192E6900D74162 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D882088317192E6900D74162 /* Default@2x.png */; };
+		D882088617192E6900D74162 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D882088517192E6900D74162 /* Default-568h@2x.png */; };
+		D882088917192E6900D74162 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D882088717192E6900D74162 /* MainStoryboard.storyboard */; };
+		D882088C17192E6900D74162 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D882088B17192E6900D74162 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D882085017191D6B00D74162 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D882081A17191D6B00D74162 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D882082117191D6B00D74162;
-			remoteInfo = Pickle;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		D882082217191D6B00D74162 /* Pickle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pickle.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D882082517191D6B00D74162 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D882082717191D6B00D74162 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D882082917191D6B00D74162 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D882082D17191D6B00D74162 /* Pickle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pickle-Info.plist"; sourceTree = "<group>"; };
-		D882082F17191D6B00D74162 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D882083117191D6B00D74162 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D882083317191D6B00D74162 /* Pickle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pickle-Prefix.pch"; sourceTree = "<group>"; };
-		D882083417191D6B00D74162 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D882083517191D6B00D74162 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D882083717191D6B00D74162 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		D882083917191D6B00D74162 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		D882083B17191D6B00D74162 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		D882083E17191D6B00D74162 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		D882084117191D6B00D74162 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		D882084317191D6B00D74162 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D882084417191D6B00D74162 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D882084B17191D6B00D74162 /* PickleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D882084C17191D6B00D74162 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		D882085417191D6B00D74162 /* PickleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PickleTests-Info.plist"; sourceTree = "<group>"; };
-		D882085617191D6B00D74162 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D882085817191D6B00D74162 /* PickleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickleTests.h; sourceTree = "<group>"; };
-		D882085917191D6B00D74162 /* PickleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickleTests.m; sourceTree = "<group>"; };
+		D882086C17192E6900D74162 /* Pickle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pickle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D882086F17192E6900D74162 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D882087117192E6900D74162 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D882087317192E6900D74162 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D882087717192E6900D74162 /* Pickle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pickle-Info.plist"; sourceTree = "<group>"; };
+		D882087917192E6900D74162 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D882087B17192E6900D74162 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D882087D17192E6900D74162 /* Pickle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pickle-Prefix.pch"; sourceTree = "<group>"; };
+		D882087E17192E6900D74162 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D882087F17192E6900D74162 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D882088117192E6900D74162 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D882088317192E6900D74162 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D882088517192E6900D74162 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D882088817192E6900D74162 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		D882088A17192E6900D74162 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D882088B17192E6900D74162 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D882081F17191D6B00D74162 /* Frameworks */ = {
+		D882086917192E6900D74162 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D882082617191D6B00D74162 /* UIKit.framework in Frameworks */,
-				D882082817191D6B00D74162 /* Foundation.framework in Frameworks */,
-				D882082A17191D6B00D74162 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D882084717191D6B00D74162 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D882084D17191D6B00D74162 /* SenTestingKit.framework in Frameworks */,
-				D882084E17191D6B00D74162 /* UIKit.framework in Frameworks */,
-				D882084F17191D6B00D74162 /* Foundation.framework in Frameworks */,
+				D882087017192E6900D74162 /* UIKit.framework in Frameworks */,
+				D882087217192E6900D74162 /* Foundation.framework in Frameworks */,
+				D882087417192E6900D74162 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D882081917191D6B00D74162 = {
+		D882086317192E6900D74162 = {
 			isa = PBXGroup;
 			children = (
-				D882082B17191D6B00D74162 /* Pickle */,
-				D882085217191D6B00D74162 /* PickleTests */,
-				D882082417191D6B00D74162 /* Frameworks */,
-				D882082317191D6B00D74162 /* Products */,
+				D882087517192E6900D74162 /* Pickle */,
+				D882086E17192E6900D74162 /* Frameworks */,
+				D882086D17192E6900D74162 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D882082317191D6B00D74162 /* Products */ = {
+		D882086D17192E6900D74162 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D882082217191D6B00D74162 /* Pickle.app */,
-				D882084B17191D6B00D74162 /* PickleTests.octest */,
+				D882086C17192E6900D74162 /* Pickle.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D882082417191D6B00D74162 /* Frameworks */ = {
+		D882086E17192E6900D74162 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D882082517191D6B00D74162 /* UIKit.framework */,
-				D882082717191D6B00D74162 /* Foundation.framework */,
-				D882082917191D6B00D74162 /* CoreGraphics.framework */,
-				D882084C17191D6B00D74162 /* SenTestingKit.framework */,
+				D882086F17192E6900D74162 /* UIKit.framework */,
+				D882087117192E6900D74162 /* Foundation.framework */,
+				D882087317192E6900D74162 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D882082B17191D6B00D74162 /* Pickle */ = {
+		D882087517192E6900D74162 /* Pickle */ = {
 			isa = PBXGroup;
 			children = (
-				D882083417191D6B00D74162 /* AppDelegate.h */,
-				D882083517191D6B00D74162 /* AppDelegate.m */,
-				D882083D17191D6B00D74162 /* MainStoryboard_iPhone.storyboard */,
-				D882084017191D6B00D74162 /* MainStoryboard_iPad.storyboard */,
-				D882084317191D6B00D74162 /* ViewController.h */,
-				D882084417191D6B00D74162 /* ViewController.m */,
-				D882082C17191D6B00D74162 /* Supporting Files */,
+				D882087E17192E6900D74162 /* AppDelegate.h */,
+				D882087F17192E6900D74162 /* AppDelegate.m */,
+				D882088717192E6900D74162 /* MainStoryboard.storyboard */,
+				D882088A17192E6900D74162 /* ViewController.h */,
+				D882088B17192E6900D74162 /* ViewController.m */,
+				D882087617192E6900D74162 /* Supporting Files */,
 			);
 			path = Pickle;
 			sourceTree = "<group>";
 		};
-		D882082C17191D6B00D74162 /* Supporting Files */ = {
+		D882087617192E6900D74162 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D882082D17191D6B00D74162 /* Pickle-Info.plist */,
-				D882082E17191D6B00D74162 /* InfoPlist.strings */,
-				D882083117191D6B00D74162 /* main.m */,
-				D882083317191D6B00D74162 /* Pickle-Prefix.pch */,
-				D882083717191D6B00D74162 /* Default.png */,
-				D882083917191D6B00D74162 /* Default@2x.png */,
-				D882083B17191D6B00D74162 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D882085217191D6B00D74162 /* PickleTests */ = {
-			isa = PBXGroup;
-			children = (
-				D882085817191D6B00D74162 /* PickleTests.h */,
-				D882085917191D6B00D74162 /* PickleTests.m */,
-				D882085317191D6B00D74162 /* Supporting Files */,
-			);
-			path = PickleTests;
-			sourceTree = "<group>";
-		};
-		D882085317191D6B00D74162 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D882085417191D6B00D74162 /* PickleTests-Info.plist */,
-				D882085517191D6B00D74162 /* InfoPlist.strings */,
+				D882087717192E6900D74162 /* Pickle-Info.plist */,
+				D882087817192E6900D74162 /* InfoPlist.strings */,
+				D882087B17192E6900D74162 /* main.m */,
+				D882087D17192E6900D74162 /* Pickle-Prefix.pch */,
+				D882088117192E6900D74162 /* Default.png */,
+				D882088317192E6900D74162 /* Default@2x.png */,
+				D882088517192E6900D74162 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -166,13 +110,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D882082117191D6B00D74162 /* Pickle */ = {
+		D882086B17192E6900D74162 /* Pickle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D882085D17191D6B00D74162 /* Build configuration list for PBXNativeTarget "Pickle" */;
+			buildConfigurationList = D882088F17192E6900D74162 /* Build configuration list for PBXNativeTarget "Pickle" */;
 			buildPhases = (
-				D882081E17191D6B00D74162 /* Sources */,
-				D882081F17191D6B00D74162 /* Frameworks */,
-				D882082017191D6B00D74162 /* Resources */,
+				D882086817192E6900D74162 /* Sources */,
+				D882086917192E6900D74162 /* Frameworks */,
+				D882086A17192E6900D74162 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -180,161 +124,84 @@
 			);
 			name = Pickle;
 			productName = Pickle;
-			productReference = D882082217191D6B00D74162 /* Pickle.app */;
+			productReference = D882086C17192E6900D74162 /* Pickle.app */;
 			productType = "com.apple.product-type.application";
-		};
-		D882084A17191D6B00D74162 /* PickleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D882086017191D6B00D74162 /* Build configuration list for PBXNativeTarget "PickleTests" */;
-			buildPhases = (
-				D882084617191D6B00D74162 /* Sources */,
-				D882084717191D6B00D74162 /* Frameworks */,
-				D882084817191D6B00D74162 /* Resources */,
-				D882084917191D6B00D74162 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D882085117191D6B00D74162 /* PBXTargetDependency */,
-			);
-			name = PickleTests;
-			productName = PickleTests;
-			productReference = D882084B17191D6B00D74162 /* PickleTests.octest */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D882081A17191D6B00D74162 /* Project object */ = {
+		D882086417192E6900D74162 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = com.zsweedyk;
 			};
-			buildConfigurationList = D882081D17191D6B00D74162 /* Build configuration list for PBXProject "Pickle" */;
+			buildConfigurationList = D882086717192E6900D74162 /* Build configuration list for PBXProject "Pickle" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = D882081917191D6B00D74162;
-			productRefGroup = D882082317191D6B00D74162 /* Products */;
+			mainGroup = D882086317192E6900D74162;
+			productRefGroup = D882086D17192E6900D74162 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D882082117191D6B00D74162 /* Pickle */,
-				D882084A17191D6B00D74162 /* PickleTests */,
+				D882086B17192E6900D74162 /* Pickle */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D882082017191D6B00D74162 /* Resources */ = {
+		D882086A17192E6900D74162 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D882083017191D6B00D74162 /* InfoPlist.strings in Resources */,
-				D882083817191D6B00D74162 /* Default.png in Resources */,
-				D882083A17191D6B00D74162 /* Default@2x.png in Resources */,
-				D882083C17191D6B00D74162 /* Default-568h@2x.png in Resources */,
-				D882083F17191D6B00D74162 /* MainStoryboard_iPhone.storyboard in Resources */,
-				D882084217191D6B00D74162 /* MainStoryboard_iPad.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D882084817191D6B00D74162 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D882085717191D6B00D74162 /* InfoPlist.strings in Resources */,
+				D882087A17192E6900D74162 /* InfoPlist.strings in Resources */,
+				D882088217192E6900D74162 /* Default.png in Resources */,
+				D882088417192E6900D74162 /* Default@2x.png in Resources */,
+				D882088617192E6900D74162 /* Default-568h@2x.png in Resources */,
+				D882088917192E6900D74162 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		D882084917191D6B00D74162 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		D882081E17191D6B00D74162 /* Sources */ = {
+		D882086817192E6900D74162 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D882083217191D6B00D74162 /* main.m in Sources */,
-				D882083617191D6B00D74162 /* AppDelegate.m in Sources */,
-				D882084517191D6B00D74162 /* ViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D882084617191D6B00D74162 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D882085A17191D6B00D74162 /* PickleTests.m in Sources */,
+				D882087C17192E6900D74162 /* main.m in Sources */,
+				D882088017192E6900D74162 /* AppDelegate.m in Sources */,
+				D882088C17192E6900D74162 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		D882085117191D6B00D74162 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D882082117191D6B00D74162 /* Pickle */;
-			targetProxy = D882085017191D6B00D74162 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		D882082E17191D6B00D74162 /* InfoPlist.strings */ = {
+		D882087817192E6900D74162 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D882082F17191D6B00D74162 /* en */,
+				D882087917192E6900D74162 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		D882083D17191D6B00D74162 /* MainStoryboard_iPhone.storyboard */ = {
+		D882088717192E6900D74162 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D882083E17191D6B00D74162 /* en */,
+				D882088817192E6900D74162 /* en */,
 			);
-			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		D882084017191D6B00D74162 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D882084117191D6B00D74162 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		D882085517191D6B00D74162 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D882085617191D6B00D74162 /* en */,
-			);
-			name = InfoPlist.strings;
+			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D882085B17191D6B00D74162 /* Debug */ = {
+		D882088D17192E6900D74162 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -362,11 +229,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D882085C17191D6B00D74162 /* Release */ = {
+		D882088E17192E6900D74162 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -387,12 +253,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		D882085E17191D6B00D74162 /* Debug */ = {
+		D882089017192E6900D74162 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -403,7 +268,7 @@
 			};
 			name = Debug;
 		};
-		D882085F17191D6B00D74162 /* Release */ = {
+		D882089117192E6900D74162 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -411,72 +276,30 @@
 				INFOPLIST_FILE = "Pickle/Pickle-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		D882086117191D6B00D74162 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pickle.app/Pickle";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pickle/Pickle-Prefix.pch";
-				INFOPLIST_FILE = "PickleTests/PickleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		D882086217191D6B00D74162 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pickle.app/Pickle";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pickle/Pickle-Prefix.pch";
-				INFOPLIST_FILE = "PickleTests/PickleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D882081D17191D6B00D74162 /* Build configuration list for PBXProject "Pickle" */ = {
+		D882086717192E6900D74162 /* Build configuration list for PBXProject "Pickle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D882085B17191D6B00D74162 /* Debug */,
-				D882085C17191D6B00D74162 /* Release */,
+				D882088D17192E6900D74162 /* Debug */,
+				D882088E17192E6900D74162 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D882085D17191D6B00D74162 /* Build configuration list for PBXNativeTarget "Pickle" */ = {
+		D882088F17192E6900D74162 /* Build configuration list for PBXNativeTarget "Pickle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D882085E17191D6B00D74162 /* Debug */,
-				D882085F17191D6B00D74162 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		D882086017191D6B00D74162 /* Build configuration list for PBXNativeTarget "PickleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D882086117191D6B00D74162 /* Debug */,
-				D882086217191D6B00D74162 /* Release */,
+				D882089017192E6900D74162 /* Debug */,
+				D882089117192E6900D74162 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D882081A17191D6B00D74162 /* Project object */;
+	rootObject = D882086417192E6900D74162 /* Project object */;
 }
